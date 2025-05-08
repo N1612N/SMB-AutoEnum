@@ -20,6 +20,25 @@ sudo apt install nmap
 sudo apt install python3-impacket
 ```
 
+#### Command to run
+```python
+python smb_autoenum.py
+```
+
+#### Script in Action ()
+File repository in Linux attacker machine
+
+![File repository](Attachments/Pasted%20image%2020250508152704.png)
+
+Execution
+![Execution](Attachments/Pasted%20image%2020250508153048.png)
+
+SMB_Loot folder in directory
+![SMB_Loot folder](Attachments/Pasted%20image%2020250508153156.png)
+
+Contents in loot directory
+![Contents in loot directory](Attachments/Pasted%20image%2020250508153347.png)
+
 #### Deployable Environments
 1. Linux (running fine as of now)
 2. Windows (need some tweaks and modifications, facing dependency issues)
@@ -29,22 +48,6 @@ sudo apt install python3-impacket
 2. Attacker Machine - Kali Linux in VMWare 
 3. Dev Environment - Vim Editor with Python 3.11.9
 4. Target Host - [TryHackMe Lab Machine for SMB Enumeration](https://tryhackme.com/room/networkservices)
-#### Command to run
-```python
-python smb_autoenum.py
-```
-
-#### Script in Action ()
-File repository in Linux attacker machine
-![[Attachments/Pasted image 20250508152704.png]]
-
-Execution
-![[Attachments/Pasted image 20250508153048.png]]SMB_Loot folder in directory
-![[Attachments/Pasted image 20250508153156.png]]
-
-Contents in loot directory
-![[Attachments/Pasted image 20250508153347.png]]
-
 #### Limitations
 1. Modify script to work in windows attack host
 2. Remove dependencies and code from scratch as much as possible
