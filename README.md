@@ -1,14 +1,17 @@
-# SMB * AutoEnum 
+# SMB Enumeration Automation Script
 
+---
+===Development in progress===
 #### Features
 1. Check Dependencies
 2. Live host discovery in subnet
-3. Scan open SMB Fileshares on default ports (139, 445)
+3. Scan open SMB File shares on default ports (139, 445)
 4. Enumerate all accessible file shares
 5. Download directory files recursively in to the local directory
 6. Search for sensitive contents from the dumped data (to be completed)
 7. Generate reports up on extracting sensitive contents (to be completed)
 
+---
 #### Dependencies
 1. Nmap
 ```sh
@@ -25,6 +28,7 @@ sudo apt install python3-impacket
 python smb_autoenum.py
 ```
 
+---
 #### Script in Action ()
 File repository in Linux attacker machine
 
@@ -39,6 +43,7 @@ SMB_Loot folder in directory
 Contents in loot directory
 ![Contents in loot directory](Attachments/Pasted%20image%2020250508153347.png)
 
+---
 #### Deployable Environments
 1. Linux (running fine as of now)
 2. Windows (need some tweaks and modifications, facing dependency issues)
@@ -54,3 +59,5 @@ Contents in loot directory
 3. Implement auto subnet scanning(Optional)
 4. Complete sensitive content extraction module
 5. Complete reporting module
+
+---
